@@ -34,11 +34,8 @@ jobs:
           versionFormat: template
           # Optional, add +X to version number. Default: 1 
           # incrementBy: X
-        env:
-          snowUsername: ${{ secrets.SN_USERNAME }}
-          snowPassword: ${{ secrets.SN_PASSWORD }}
-          snowSourceInstance: ${{ secrets.SN_DEV_INSTANCE }}
-          appSysID: ${{ secrets.SN_APP_SYSID }}
+          
+       
           
     # This is required to pass the version number output from Publish App 
     # to the input for Install App in the next job! This is because the jobs 
