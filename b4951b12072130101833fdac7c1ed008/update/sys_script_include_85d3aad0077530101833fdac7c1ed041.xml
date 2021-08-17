@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.Demo_test_script</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Demo_test_script</name>
+        <script><![CDATA[var Demo_test_script = Class.create();
+Demo_test_script.prototype = {
+    initialize: function() {
+    },
+ //demo
+    type: 'Demo_test_script'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-08-02 05:59:50</sys_created_on>
+        <sys_id>85d3aad0077530101833fdac7c1ed041</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Demo_test_script</sys_name>
+        <sys_package display_value="Test Application" source="b4951b12072130101833fdac7c1ed008">b4951b12072130101833fdac7c1ed008</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Test Application">b4951b12072130101833fdac7c1ed008</sys_scope>
+        <sys_update_name>sys_script_include_85d3aad0077530101833fdac7c1ed041</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-08-02 05:59:50</sys_updated_on>
+    </sys_script_include>
+</record_update>
