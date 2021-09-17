@@ -12,7 +12,7 @@ jobs:
     # the pipeline build to the Dev instance, then publish the application to 
     # app repo using the template versioning format. 
     name: Publish from Dev
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     # Below line can be used to set conditionals for modifying your pipeline as needed.
     # if: ${{ github.event_name == 'pull_request'}}
 
@@ -52,7 +52,7 @@ jobs:
     # to clean up the persistent Test environment. 
     needs: build
     name: Run ATF in Test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     # Below line can be used to set conditionals for modifying your pipeline as needed.
     # if: ${{ github.event_name == 'pull_request'}}
     
@@ -103,7 +103,7 @@ jobs:
     # the first two jobs run on CI, then all three jobs run on CD. 
     needs: test
     name: Deploy to Prod
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
     steps:
     
